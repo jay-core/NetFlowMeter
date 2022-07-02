@@ -39,6 +39,7 @@ def seg_flow_pkts(file, stream_no):
 
 	return: list of list of fwd and back pkts
 	"""
+	# The tshark command to extract the flows and their parameters -> time_relative
 	command = 'tshark -r {} -Y "tcp.stream eq {}" -T fields -e ip.src -e ip.dst -e frame.time_relative -E separator=,'.format(file, stream_no)
 	out = sp.getoutput(command)
 
