@@ -25,8 +25,8 @@ import numpy as np
 #======================================
 #=========================================
 # Specify the directory and the extension to use the program
-directory = '/home/oem/Downloads/VPNandDatasets/VPNPCAPS01/'
-extension = "pcap"
+directory = '' #please specify the absolute path like -> /home/users/........
+extension = "pcap" #by the nature of this project, keep this extension
 #=========================================
 
 #=========================================
