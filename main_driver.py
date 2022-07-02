@@ -33,15 +33,17 @@ extension = "pcap" #by the nature of this project, keep this extension
 super_list = [] ## the super list of information (for all files)
 #=========================================
 
+#The function get_all_files_within_directory returns a list of all files in the specified directory in str format.
 files_list = gfs.get_all_files_within_dir(directory, extension)
 
 #==================
 ### the below code extracts the number of flows in each file methodically
 # stream_count_list = gfs.get_stream_count(files_list)
-#==================
 
 #Hardcoded stream count list for each of the 14 files for faster processing
+#Please change this according to your chosen files
 stream_count_list = [7, 6, 235, 68, 75, 139, 53, 6, 62, 42, 129, 137, 62, 35]
+#==================
 
 # print(files_list)
 # print(stream_count_list)
